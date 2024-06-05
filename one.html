@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="icon" href="Images/blood1.jpg">
+     <link rel="stylesheet" href="one.css" />
+<body>
+    <div class="header">
+       <div class="head1">
+        <img src="Images/blood1.jpg" height="120px" width="120px" alt="LOGO">
+       </div>
+       <div class="head2"><center>
+        <p>
+        <b><h1>Blood Bank Management System</h1>
+        <h3 class="gtn">Government of Tamil Nadu</h3></b></p></center>
+       </div>
+       <div class="head3">
+        <img src="Images/TN.jpeg" height="120px" width="120px" alt="TN LOGO">
+       </div>
+    </div>
+    <hr>
+    <div class="header2">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">DASHBOARD</a></li>
+                <li><a href="">ADMIN REPORT</a></li>
+                <li><a href="">REGISTRATION</a></li>
+                <li><a href="">SEARCH</a></li>
+                <li><a href="">USER MANUAL</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <input class="Search" type="text" placeholder="Search">&nbsp;&nbsp;&nbsp;
+                <button class="go">GO</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+        </nav>
+    </div><hr><br><br><br>
+    <div class="container1">
+        <div class="con-box1">
+            <div class="slider-container">
+                <div class="slides">
+                     <div class="slide">
+                        <img src="Images/don01.webp" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/don1.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/don2.jpg" alt="Slide 3">
+                    </div>
+                 </div>
+                 <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <div class="con-box2">
+            <form action="" id="form">
+                <h1 class="form-h1">Register</h1>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                    <div class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div><br><br><br><br>
+    <div class="container-3">
+        <div class="con3-1">
+          <img class="con3-img" src="Images/donationFact.jpg" alt="image" height="400px" width="600px">
+        </div>      
+        <div class="con3-2">
+                  <table class="table table-bordered" id="bldgrp">
+                    <tbody>
+                      <tr>
+                        <th
+                          colspan="3"
+                          style="color: white; background-color: red"
+                        >
+                          Compatible Blood Type Donors
+                        </th>
+                      </tr>
+                      <tr>
+                        <td><b>Blood Type</b></td>
+                        <td><b>Donate Blood To</b></td>
+                        <td><b>Receive Blood From</b></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>A+</b></span>
+                        </td>
+                        <td>A+ AB+</td>
+                        <td>A+ A- O+ O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>O+</b></span>
+                        </td>
+                        <td>O+ A+ B+ AB+</td>
+                        <td>O+ O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>B+</b></span>
+                        </td>
+                        <td>B+ AB+</td>
+                        <td>B+ B- O+ O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>AB+</b></span>
+                        </td>
+                        <td>AB+</td>
+                        <td>Everyone</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>A-</b></span>
+                        </td>
+                        <td>A+ A- AB+ AB-</td>
+                        <td>A- O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>O-</b></span>
+                        </td>
+                        <td>O-</td>
+                        <td>O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>B-</b></span>
+                        </td>
+                        <td>B+ B- AB+ AB-</td>
+                        <td>B- O-</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="color: #961e1b"><b>AB-</b></span>
+                        </td>
+                        <td>AB+ AB-</td>
+                        <td>AB- A- B- O-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+       </div><center><br><br><br>
+       <div id="layoutDefault_footer">
+          <footer
+            class="footer pt-10 pb-5x mt-auto bg-dark footer-dark reverse"
+          >
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-12 medium text-center my-2"><hr><br>
+                  <b
+                    >Copyright &copy; 2024,Designed & Developed by Tamil Nadu IT Developer, Dept. of IT, Govt. of Tamil Nadu.
+                    All Rights Reserved.
+                  </b><br><br>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div></center>
+                
+    <script src="one.js"></script>
+</body>
+</html>

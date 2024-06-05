@@ -1,0 +1,199 @@
+.head1 {
+  padding-top: 10px;
+  width: 18%;
+  padding-left: 50px;
+}
+.head2 {
+  padding-top: 10px;
+  color: red;
+  width: 67%;
+  padding-right: 100px;
+}
+.head3 {
+  padding-top: 10px;
+  width: 15%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+}
+.gtn {
+  color: black;
+}
+/*menu section*/
+.navbar {
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.header2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /*position: fixed;*/
+}
+.Search {
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 10px;
+  border: 1px solid red;
+}
+.navbar li {
+  list-style: none;
+  padding: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navbar a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: red;
+  background-color: white;
+}
+.go {
+  color: red;
+  background-color: yellow;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.go:hover {
+  border-radius: 10px;
+  color: white;
+  border: 1px solid red;
+  background-color: lawngreen;
+}
+
+/*slider section*/
+.con-box1 {
+  padding: 1px;
+}
+.slider-container {
+  width: 55%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 732px;
+  height: 400px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  /*z-index: 1;*/
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/*mobile view*/
+@media screen and (max-width: 800px) {
+  .navbar {
+    color: greenyellow;
+    background-color: yellow;
+  }
+  .head2 {
+    color: greenyellow;
+  }
+}
+/*register form*/
+#form {
+  width: 400px;
+  margin: 20vh auto 0 auto;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 30px;
+}
+.form-h1 {
+  text-align: center;
+  color: red;
+}
+#form button {
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.input-group input {
+  border-radius: 7px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid red;
+}
+.input-group input:focus {
+  outline: 0;
+}
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.input-group.success input {
+  border-color: green;
+}
+.input-group.error input {
+  border-color: orangered;
+}
+/*table*/
+.table table-bordered,
+td,
+th,
+tr {
+  border: 1px solid;
+  border-spacing: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.container-3 {
+  display: flex;
+  margin-left: 70px;
+}
+.con3-img {
+  margin-right: 30px;
+}
